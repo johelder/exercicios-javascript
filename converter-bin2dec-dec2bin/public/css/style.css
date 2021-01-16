@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::root {
+    font-size: 62.5%;
+}
+
+body {
+    background: #774DD6
+}
+
+.container { 
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bin2dec-container,
+.dec2bin-container {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1,
+input {
+    margin: 2rem;
+}
+
+.bin2dec-container h1,
+.dec2bin-container h1 {
+    max-width: 20rem;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    font-weight: 700;
+    color: #E6E6F0;
+}
+
+.bin2dec-container input,
+.dec2bin-container input {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Roboto' ,sans-serif;
+}
+.bin2dec-container input::placeholder,
+.dec2bin-container input::placeholder {
+    color: #32264D;
+}
+
+.btns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.btns #changeBtn {
+    justify-self: end;
+    cursor: pointer;
+    margin-right: .5rem;
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    transition: .5s;
+}
+
+.btns #changeBtn:hover {
+    color: #32264D;
+}
+
+.btns #convertBtn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: center;
+    cursor: pointer;
+    width: 14rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    color: white;
+    background: #6842C2;
+    outline: none;
+    border: none;
+    transition: .5s;
+}
+
+.btns #convertBtn:hover {
+    background: #32264D;
+}
+
+.bin2dec-container.off, 
+.dec2bin-container.off {
+    display: none;
+}
+
+@media (min-width: 769px) {
+
+    .btns {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .bin2dec-container,
+    .dec2bin-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .bin2dec-container h1,
+    .dec2bin-container h1 {
+        max-width: 700px;
+    }
+
+    .btns #changeBtn {
+        left: 40%;
+    }
+}
+

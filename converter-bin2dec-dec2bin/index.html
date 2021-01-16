@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="public/scripts/bin2dec.js"></script>
+        <script defer src="public/scripts/dec2bin.js"></script>
+        <script defer src="public/scripts/hideClass.js"></script>
+        <link rel="stylesheet" href="public/css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    <div class="container">
+        <div class="bin2dec-container">
+            <h1>Binary to decimal converter</h1>
+            <input type="text" id="binaryInput" maxlength="8" placeholder="Binary">
+            <input type="text" id="decimalInput" placeholder="Decimal" disabled>
+        </div>
+
+        <div class="dec2bin-container off">
+            <h1>Decimal to binary converter</h1>
+            <input type="text" id="inputDecimal" placeholder="Decimal" pattern="^[0-9]$">
+            <input type="text" id="inputBinary" placeholder="Binary" disabled>
+        </div>
+
+        <div class="btns">
+            <button id="changeBtn"><span class="material-icons">autorenew</span></button>
+            <button id="convertBtn">Convert</button>
+        </div>
+    </div>
+    </body>
+</html>
